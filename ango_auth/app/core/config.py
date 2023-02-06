@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     SERVER_HOST: str
     SERVER_PORT: int
     APP_DOMAIN: str
+    APP_PREFIX: str = "/auth"
     SHARED_ACCESS_TOKEN: str
 
     # Postgres DB
