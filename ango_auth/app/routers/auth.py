@@ -1,9 +1,8 @@
 from fastapi import APIRouter
 
+import ango_auth.app.services.auth as auth_service
 from ango_auth.app.core.config import Settings
 from ango_auth.app.models.auth import SignInRequest, Token
-
-import ango_auth.app.services.auth as auth_service
 
 settings = Settings()
 
