@@ -9,7 +9,7 @@ settings = Settings()
 auth_router = APIRouter()
 
 
-@auth_router.post("/", response_model=Token)
+@auth_router.post("/sign-in", response_model=Token)
 def sign_in(sign_in_request: SignInRequest) -> Token:
     access_token = auth_service.sign_in(sign_in_request)
     return Token(access_token=access_token)
