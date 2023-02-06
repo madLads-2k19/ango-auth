@@ -1,9 +1,9 @@
 import json
 
-from ango_auth.app.core.exceptions import AuthException
-from ango_auth.app.core.crypto.auth import verify_password, create_access_token
-from ango_auth.app.models.auth import SignInRequest, TokenData
 import ango_auth.app.services.web as web_service
+from ango_auth.app.core.crypto.auth import create_access_token, verify_password
+from ango_auth.app.core.exceptions import AuthException
+from ango_auth.app.models.auth import SignInRequest, TokenData
 from ango_auth.app.models.user import UserDb
 
 

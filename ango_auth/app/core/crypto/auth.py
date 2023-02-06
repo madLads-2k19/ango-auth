@@ -2,8 +2,9 @@ from datetime import datetime, timedelta
 from typing import Optional
 
 from jose import jwt
-from ango_auth.app.core.config import Settings
 from passlib.context import CryptContext
+
+from ango_auth.app.core.config import Settings
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
